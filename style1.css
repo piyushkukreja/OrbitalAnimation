@@ -1,0 +1,229 @@
+/*Media Queries*/
+/*base style*/
+#media-query h1{
+    margin-bottom: 15px;
+}
+#media-query p{
+    border: solid 1px BLACK;
+    margin-bottom: 15px;
+}
+#media-query #p1{
+    background: #A52A2A;
+    width: 300px;
+    height: 300px;
+}
+#media-query #p2{
+    background: orange;
+    width: 50px;
+    height: 50px;
+}
+/*CSS for Larger Devices*/
+@media(min-width:950px){
+    #media-query #p1{
+        width: 80%;
+    }
+    #media-query #p2{
+        width: 150px;
+        height: 150px;
+    }
+}
+/*CSS For Medium Screen*/
+@media(min-width:750px) and (max-width:949px)
+{
+    #media-query #p1{
+        width: 50%;
+    }
+    #media-query #p2{
+        width: 100px;
+        height: 100px;
+    }
+}
+@media print{
+    #media-query h1{
+        font-size:14px;
+    }
+}
+/*orbit animations styles*/
+
+/*Animations*/
+@-webkit-keyframes stars{
+    from{opacity:1;}
+    to{opacity:0.2;}
+}
+@-moz-keyframes stars{
+    from{opacity:1;}
+    to{opacity:0.2;}
+}
+@-o-keyframes stars{
+    from{opacity:1;}
+    to{opacity:0.2;}
+}
+@-ms-keyframes stars{
+    from{opacity:1;}
+    to{opacity:0.2;}
+}
+
+@-webkit-keyframes sun{
+    from{
+        box-shadow: 0 0 50px #F5C91A;
+    }
+    to{
+        box-shadow: 0 0 20px #F5C91A;
+    }
+}
+@-moz-keyframes sun{
+    from{
+        box-shadow: 0 0 50px #F5C91A;
+    }
+    to{
+        box-shadow: 0 0 20px #F5C91A;
+    }
+}
+@-o-keyframes sun{
+    from{
+        box-shadow: 0 0 50px #F5C91A;
+    }
+    to{
+        box-shadow: 0 0 20px #F5C91A;
+    }
+}
+@-ms-keyframes sun{
+    from{
+        box-shadow: 0 0 50px #F5C91A;
+    }
+    to{
+        box-shadow: 0 0 20px #F5C91A;
+    }
+}
+
+@-webkit-keyframes spin{
+    from{transform: rotate(0);}
+    to{transform: rotate(360deg);}
+}
+
+@-o-keyframes spin{
+    from{transform: rotate(0);}
+    to{transform: rotate(360deg);}
+}
+@-moz-keyframes spin{
+    from{transform: rotate(0);}
+    to{transform: rotate(360deg);}
+}
+@-ms-keyframes spin{
+    from{transform: rotate(0);}
+    to{transform: rotate(360deg);}
+}
+
+
+html, body{
+    height: 100%;
+    widows: 100%;
+}
+#universe{
+    background: #111;
+    background: -webkit-radial-gradient(#555, #000);
+    background: -o-radial-gradient(#555, #000);
+    background: -moz-radial-gradient(#555, #000);
+    
+}
+#stars{
+    height: 100%;
+    widows: 100%;
+    background: url('images/stars.png');
+    animation: stars 3s infinite alternate;
+}
+
+#sun{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px ;
+    margin-left: -100px ;
+    height: 200px;
+    width: 200px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    background: orange;
+    background: -webkit-radial-gradient(#F5C313,#Ec7E08);
+    background: -moz-radial-gradient(#F5C313,#Ec7E08);
+    background: -o-radial-gradient(#F5C313,#Ec7E08);
+    background: radial-gradient(#F5C313,#Ec7E08);
+    animation: sun 4s infinite alternate;
+}
+
+#earth-orbit{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -280px;
+    width: 550px;
+    height: 630px;
+/*    border: solid 1px red;*/
+    border-radius: 100%;
+    animation: spin 20s linear infinite;
+    
+}
+
+#earth{
+    position: absolute;
+    top:50%;
+    left: 0;
+    animation: spin 3s linear infinite;
+    margin-top: -40px;
+}
+#moon-orbit{
+/*    z-index: 10;*/
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-top: -60px;
+    margin-left: -300px;
+    width: 120px;
+    height: 120px;
+/*      border:solid 1px red;*/
+    border-radius: 100%;
+
+    animation: spin 1s linear infinite;
+/*    -webkit-animation: spin 20s linear infinite;
+    -moz-animation: spin 20s linear infinite;
+    -o-animation: spin 20s linear infinite;
+    -ms-animation: spin 20s linear infinite;
+    
+*/
+        
+}
+#moon{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    
+    
+    background: GRAY;
+    background: -webkit-radial-gradient(#DDD, #888);
+    background: -moz-radial-gradient(#DDD, #888);
+    background: -o-radial-gradient(#DDD, #888);
+    background: -ms-radial-gradient(#DDD, #888);
+    
+    
+    border-radius: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
